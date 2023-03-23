@@ -61,9 +61,9 @@ Medium: 11px
     box-sizing: border-box;
 }
 
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 body {
     font-family: 'Rubik', sans-serif;
@@ -79,6 +79,11 @@ header {
     z-index: 1000;
 }
 
+ul {
+    list-style: none;
+}
+
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -103,7 +108,7 @@ header {
     color: black;
     font-weight: 500;
     font-size: 18px;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .nav-link:hover {
@@ -120,14 +125,16 @@ header {
 /* intro styles */
 .section-intro {
     background-color: #fdf2e9;
+    padding-top: 42px;
+    padding-bottom: 80px;
 }
 
 .intro {
-    max-width: 1300px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 96px;
-    padding: 54px 24px;
+    padding: 0px 32px;
     margin: 0 auto;
 }
 
@@ -211,7 +218,7 @@ header {
 
 /* section feature styles */
 .container-featured {
-    padding: 50px 0px;
+    padding: 50px 32px;
     max-width: 1150px;
     margin: 0px auto;
 }
@@ -238,23 +245,179 @@ header {
 .section-step {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.step-number {
+    color: black;
+    padding: 42px 0;
 }
 
 .detail-steps {
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 0px 32px;
     display: grid;
+    row-gap: 50px;
 }
 
 .step-how {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    align-items: center;
+    gap: 120px;
+}
+
+.step-title {
+    color: #cf711f;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.step-heading {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.step-number {
+    color: rgb(221, 221, 221);
+    font-size: 86px;
+    font-weight: 700;
+}
+
+.step-subject {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.step-content {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    /* width: 600px;
+    height: 600px; */
+    /* padding: 20px 20px; */
+    background-color: #fae5d3;
+    border: 30px solid #fdf2e9;
+    border-radius: 50%;
+    width: 65%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .step-img-box img {
+    width: 80%;
+}
+
+/* section meals */
+.section-meals {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.meals-details {
+    margin: 42px auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    justify-content: center;
+}
+
+.meals-title {
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.meals-subject {
+    display: block;
+    text-transform: uppercase;
+    color: #cf711f;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.meals-heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.meal {
+    transition: all 0.5s;
+    box-shadow: 10px 10px 5px #d6d4d4;
+}
+
+.meal-content {
+    padding: 40px 40px;
+}
+
+.meal-label {
+    display: flex;
+    gap: 10px;
+    margin: 12px auto;
+    font-weight: 500;
+    color: black;
+}
+
+#vegetarian {
+    background-color: rgb(81, 207, 102);
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+#vegan {
+    background-color: #94d82d;
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+#paleo {
+    background-color: rgb(255, 212, 59);
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+.meal-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.meal-list li {
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.meal-description span {
+    font-weight: 500;
+}
+
+ion-icon {
+    color: #cf711f;
+}
+.meal-img {
     width: 100%;
+    border-radius: 10px;
+}
+
+.all-recipes {
+    text-align: center;
+}
+
+.omni-link {
+    color: #e67e22;
+}
+
+.omni-link:hover,
+.omni-link:active {
+    color: #cf711f;
+    text-decoration: none;
+}
+
+.omni-link:active {
+    border: 7px solid #f4cba7;
 }
