@@ -349,6 +349,7 @@ ul {
 .meal {
     transition: all 0.5s;
     box-shadow: 10px 10px 5px #d6d4d4;
+    border-radius: 10p;
 }
 
 .meal-content {
@@ -420,4 +421,16 @@ ion-icon {
 
 .omni-link:active {
     border: 7px solid #f4cba7;
+}
+
+/* section -testimonials */
+
+.section-testimonials {
+    /* max-width: 1300px; */
+    background-color: #fae5d3;
+}
+
+.testimonials-container {
+    max-width: 1300px;
+    margin: 0 auto;
 }
