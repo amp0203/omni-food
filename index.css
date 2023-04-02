@@ -389,11 +389,17 @@ ul {
 }
 
 .meal-list li {
-    margin: 10px auto;
+    display: flex;
+    gap: 15px;
+    margin: 15px auto;
     font-size: 18px;
 }
 
-.meal-description span {
+.meal-icon {
+    font-size: 24px;
+}
+
+.meal-detail-number {
     font-weight: 500;
 }
 
@@ -610,11 +616,87 @@ ion-icon {
     font-size: 18px;
 }
 
+/* section-register */
+.section-register {
+    margin: 0 auto;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 90px;
+}
+
+.register-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: #ededed;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 60px;
+    background-color: rgb(233, 142, 62);
+}
+
+.register-text-box {
+    padding: 50px 0 0 60px;
+    color: #333;
+}
+
+.register-heading {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.register-text {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.register-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 32px;
+}
+
+.register-form label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.register-form input,
+select {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(252, 233, 225);
+}
+
+.register-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sign-up-btn {
+    display: inline-block;
+    color: #ededed;
+    background-color: #563118;
+    padding: 0px 0;
+}
+
+.sign-up-btn:hover {
+    background-color: rgb(252, 233, 225);
+    color: #563118;
+    border: none;
+}
 /* Footer */
 .footer-container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 54px 0;
+    padding-top: 90px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 40px;
