@@ -349,7 +349,7 @@ ul {
 .meal {
     transition: all 0.5s;
     box-shadow: 10px 10px 5px #d6d4d4;
-    border-radius: 10p;
+    border-radius: 10px;
 }
 
 .meal-content {
@@ -398,11 +398,11 @@ ul {
 }
 
 ion-icon {
-    color: #cf711f;
+    color: #e67e22;
 }
 .meal-img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .all-recipes {
@@ -411,6 +411,7 @@ ion-icon {
 
 .omni-link {
     color: #e67e22;
+    font-size: 18px;
 }
 
 .omni-link:hover,
@@ -423,14 +424,80 @@ ion-icon {
     border: 7px solid #f4cba7;
 }
 
+.diet h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.diet-list li {
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: flex;
+    gap: 15px;
+}
+
+.list-icon {
+    width: 30px;
+    height: 30px;
+}
+
 /* section -testimonials */
 
 .section-testimonials {
     /* max-width: 1300px; */
-    background-color: #fae5d3;
+    background-color: #fdf2e9;
 }
 
 .testimonials-container {
     max-width: 1300px;
     margin: 0 auto;
+    padding: 36px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+}
+
+.testimonials-heading {
+    padding: 50px 0;
+}
+
+.testimonials-heading h3 {
+    text-transform: uppercase;
+    color: #cf711f;
+    margin-bottom: 26px;
+}
+
+.omni-message {
+    font-weight: 600px;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.testimonials-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 36px;
+}
+
+.testimonial-content-item img {
+    border-radius: 50%;
+    width: 64px;
+}
+
+.testimonial-text,
+.testimonial-sign {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.testimonials-image-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.testimonials-image-box img {
+    width: 100%;
+    /* margin: 15px; */
 }
