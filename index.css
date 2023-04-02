@@ -501,3 +501,39 @@ ion-icon {
     width: 100%;
     /* margin: 15px; */
 }
+
+/* Footer */
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 54px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 40px;
+}
+
+.omni-footer-item h4 {
+    margin-bottom: 36px;
+}
+
+.contact-method {
+    margin-top: 30px;
+}
+
+.omni-footer-item p,
+a {
+    line-height: 1.8;
+}
+.omni-footer-item a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+.social-links-icon {
+    color: #767676;
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
